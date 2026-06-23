@@ -1,0 +1,10 @@
+# OS
+.DS_Store
+
+# Editor / local tooling
+.claude/
+.vscode/
+*.log
+
+# Node (none currently, but safe)
+node_modules/

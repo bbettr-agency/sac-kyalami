@@ -1,0 +1,1098 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Progressive enhancement gate: presentation mode only activates if JS runs.
+       Without JS the deck degrades to a readable, scrollable document. -->
+  <script>document.documentElement.classList.add('js');</script>
+  <title>SAC Kyalami — Strategic Growth Presentation</title>
+  <meta name="description" content="A 40-year legacy. A new digital era. Strategic growth presentation for SAC Kyalami." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- Ambient layers -->
+  <div class="grain" aria-hidden="true"></div>
+  <div class="vignette" aria-hidden="true"></div>
+  <div class="grid-bg" aria-hidden="true"></div>
+
+  <!-- Top progress -->
+  <div class="progress" aria-hidden="true"><span class="progress__bar" id="progressBar"></span></div>
+
+  <!-- Top chrome -->
+  <header class="topbar">
+    <div class="brand">
+      <span class="brand__mark" aria-hidden="true"></span>
+      <span class="brand__name">SAC&nbsp;KYALAMI</span>
+    </div>
+    <div class="topbar__meta">
+      <span class="mono">GROWTH&nbsp;STRATEGY</span>
+      <span class="dot-sep" aria-hidden="true"></span>
+      <span class="mono dim">CONFIDENTIAL</span>
+    </div>
+  </header>
+
+  <!-- Vertical dot navigation -->
+  <nav class="dotnav" id="dotnav" aria-label="Slide navigation"></nav>
+
+  <!-- Slides -->
+  <main class="deck" id="deck">
+
+    <!-- ============ SLIDE 1 — COVER ============ -->
+    <section class="slide slide--cover is-active" data-slide data-label="Cover">
+      <div class="slide__inner cover">
+        <div class="cover__media">
+          <div class="instrument">
+            <span class="instrument__corner instrument__corner--tl"></span>
+            <span class="instrument__corner instrument__corner--tr"></span>
+            <span class="instrument__corner instrument__corner--bl"></span>
+            <span class="instrument__corner instrument__corner--br"></span>
+            <svg class="instrument__svg" viewBox="0 0 400 400" aria-hidden="true">
+              <circle class="ci-ring" cx="200" cy="200" r="156" />
+              <circle class="ci-ring ci-ring--faint" cx="200" cy="200" r="116" />
+              <circle class="ci-ticks" cx="200" cy="200" r="176" pathLength="120" />
+              <circle class="ci-ticks ci-ticks--minor" cx="200" cy="200" r="138" pathLength="60" />
+              <line class="ci-cross" x1="20" y1="200" x2="380" y2="200" />
+              <line class="ci-cross" x1="200" y1="20" x2="200" y2="380" />
+              <circle class="ci-arc" id="ciArc" cx="200" cy="200" r="156" pathLength="100" />
+              <line class="ci-needle" id="ciNeedle" x1="200" y1="200" x2="200" y2="58" />
+              <circle class="ci-hub" cx="200" cy="200" r="7" />
+            </svg>
+            <span class="instrument__label instrument__label--tl mono">SAC · KYALAMI</span>
+            <span class="instrument__label instrument__label--br mono">GROWTH&nbsp;SYSTEM</span>
+            <span class="instrument__label instrument__label--bl mono">FIG.&nbsp;00</span>
+          </div>
+        </div>
+
+        <div class="cover__content">
+          <span class="kicker" data-an="up"><i></i>Strategic Growth Presentation</span>
+          <h1 class="cover__title">
+            <span class="line" data-an="mask">SAC</span>
+            <span class="line" data-an="mask">Kyalami</span>
+          </h1>
+          <p class="cover__lede" data-an="up">Forty years of trust.<br /><span class="accent">A new digital era.</span></p>
+
+          <div class="cover__meta" data-an="up">
+            <div class="meta-item">
+              <span class="mono dim">PREPARED&nbsp;FOR</span>
+              <span class="meta-val">SAC Kyalami</span>
+            </div>
+            <div class="meta-item">
+              <span class="mono dim">ENGAGEMENT</span>
+              <span class="meta-val">Digital Growth &amp; Brand Strategy</span>
+            </div>
+            <div class="meta-item">
+              <span class="mono dim">DATE</span>
+              <span class="meta-val">2026</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="cover__scroll" data-an="up">
+        <span class="mono">BEGIN</span>
+        <span class="cover__scroll-line"></span>
+      </div>
+    </section>
+
+    <!-- ============ SLIDE 2 — 40 YEARS TIMELINE ============ -->
+    <section class="slide slide--timeline" data-slide data-label="The Legacy">
+      <div class="slide__inner timeline">
+        <div class="timeline__head">
+          <span class="kicker" data-an="up"><i></i>01 — The Legacy</span>
+          <div class="bignum">
+            <span class="bignum__val" data-count="40" data-dur="2.2">0</span>
+            <span class="bignum__unit" data-an="up">Years</span>
+          </div>
+          <h2 class="h2" data-an="up">Four decades of earning trust,<br />one vehicle at a time.</h2>
+          <span class="tag-illus mono" data-an="up"><span class="tag-illus__dot"></span>Illustrative timeline — milestone dates to be confirmed</span>
+        </div>
+
+        <div class="timeline__track" id="tlTrack">
+          <div class="timeline__meta" data-an="up">
+            <span class="mono dim">Fig. 01 — Operating History</span>
+            <span class="mono dim">Scale 1984 → 2026 · 40 YRS</span>
+          </div>
+          <div class="timeline__axis">
+            <span class="timeline__line" data-tl-line></span>
+            <span class="timeline__ticks" data-tl-ticks aria-hidden="true"></span>
+          </div>
+          <ol class="timeline__nodes">
+            <li class="tl-node" data-node>
+              <span class="tl-node__stem"></span>
+              <span class="tl-node__dot"></span>
+              <span class="tl-node__year mono">1984</span>
+              <span class="tl-node__label">Founded near the Kyalami circuit</span>
+            </li>
+            <li class="tl-node" data-node>
+              <span class="tl-node__stem"></span>
+              <span class="tl-node__dot"></span>
+              <span class="tl-node__year mono">1990s</span>
+              <span class="tl-node__label">A reputation built on word of mouth</span>
+            </li>
+            <li class="tl-node" data-node>
+              <span class="tl-node__stem"></span>
+              <span class="tl-node__dot"></span>
+              <span class="tl-node__year mono">2000s</span>
+              <span class="tl-node__label">Generations of loyal customers</span>
+            </li>
+            <li class="tl-node" data-node>
+              <span class="tl-node__stem"></span>
+              <span class="tl-node__dot"></span>
+              <span class="tl-node__year mono">2010s</span>
+              <span class="tl-node__label">The trusted name in specialised care</span>
+            </li>
+            <li class="tl-node tl-node--now" data-node>
+              <span class="tl-node__stem"></span>
+              <span class="tl-node__dot"></span>
+              <span class="tl-node__year mono">2026</span>
+              <span class="tl-node__label">A legacy ready for its next chapter</span>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SLIDE 3 — THE HONEST QUESTION ============ -->
+    <section class="slide slide--question" data-slide data-label="The Question">
+      <div class="slide__inner question">
+        <span class="kicker center" data-an="up"><i></i>02 — An Honest Question</span>
+        <blockquote class="question__quote">
+          <span class="qline" data-an="mask">If your reputation took</span>
+          <span class="qline" data-an="mask"><span class="accent">forty years</span> to build —</span>
+          <span class="qline" data-an="mask">why does it disappear</span>
+          <span class="qline" data-an="mask">the moment someone</span>
+          <span class="qline" data-an="mask">searches online?</span>
+        </blockquote>
+        <span class="question__rule" data-an="rule"></span>
+      </div>
+    </section>
+
+    <!-- ============ SLIDE 4 — TRUST vs DIGITAL IDENTITY ============ -->
+    <section class="slide slide--tension" data-slide data-label="The Tension">
+      <div class="slide__inner tension">
+        <div class="tension__head">
+          <span class="kicker" data-an="up"><i></i>03 — The Tension</span>
+          <h2 class="h2" data-an="up">A business with 40 years of trust —<br />and a digital identity still to be claimed.</h2>
+        </div>
+
+        <div class="tension__grid">
+          <article class="panel panel--built" data-panel>
+            <span class="panel__tag mono">WHAT YOU’VE BUILT</span>
+            <ul class="panel__list">
+              <li data-row><span class="row__i mono">01</span>Four decades of reputation</li>
+              <li data-row><span class="row__i mono">02</span>Loyal, multi-generational customers</li>
+              <li data-row><span class="row__i mono">03</span>Genuine craftsmanship &amp; trust</li>
+              <li data-row><span class="row__i mono">04</span>Word-of-mouth that money can’t buy</li>
+            </ul>
+          </article>
+
+          <span class="tension__vs mono" data-an="up">VS</span>
+
+          <article class="panel panel--seen" data-panel>
+            <span class="panel__tag mono accent">WHAT THE MARKET MAY SEE ONLINE</span>
+            <ul class="panel__list">
+              <li data-row><span class="row__i mono">01</span>Often just a faint search result</li>
+              <li data-row><span class="row__i mono">02</span>An outdated or incomplete profile</li>
+              <li data-row><span class="row__i mono">03</span>Limited story, proof or presence</li>
+              <li data-row><span class="row__i mono">04</span>A brand that’s easy to overlook online</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SLIDE 5 — WHERE CUSTOMERS GO INSTEAD ============ -->
+    <section class="slide slide--leakage" data-slide data-label="The Leakage">
+      <div class="slide__inner leakage">
+        <div class="leakage__head">
+          <span class="kicker" data-an="up"><i></i>04 — The Leakage</span>
+          <h2 class="h2" data-an="up">So where do new customers<br />go instead?</h2>
+          <p class="leakage__sub" data-an="up">How buyers tend to discover an auto-care business today — and where decades of word of mouth now rank.</p>
+          <span class="tag-illus mono" data-an="up"><span class="tag-illus__dot"></span>Illustrative — industry-pattern figures, not SAC-specific data</span>
+        </div>
+
+        <div class="chart" id="chart" aria-hidden="true">
+          <div class="chart__bars">
+            <div class="bar" data-bar style="--val:68">
+              <span class="bar__val mono" data-count="68" data-suffix="%">0</span>
+              <span class="bar__fill"></span>
+              <span class="bar__cat">Google Search</span>
+            </div>
+            <div class="bar" data-bar style="--val:54">
+              <span class="bar__val mono" data-count="54" data-suffix="%">0</span>
+              <span class="bar__fill"></span>
+              <span class="bar__cat">Maps &amp; Reviews</span>
+            </div>
+            <div class="bar" data-bar style="--val:47">
+              <span class="bar__val mono" data-count="47" data-suffix="%">0</span>
+              <span class="bar__fill"></span>
+              <span class="bar__cat">Competitor Websites</span>
+            </div>
+            <div class="bar" data-bar style="--val:33">
+              <span class="bar__val mono" data-count="33" data-suffix="%">0</span>
+              <span class="bar__fill"></span>
+              <span class="bar__cat">Social Media</span>
+            </div>
+            <div class="bar bar--you" data-bar style="--val:19">
+              <span class="bar__val mono" data-count="19" data-suffix="%">0</span>
+              <span class="bar__fill"></span>
+              <span class="bar__cat">Word of Mouth</span>
+            </div>
+          </div>
+          <div class="chart__baseline"></div>
+        </div>
+
+        <p class="leakage__note" data-an="up">
+          <span class="accent">The one channel SAC Kyalami is strongest in is now often the smallest.</span>
+          Today, much of the decision tends to happen online — before a customer ever calls.
+        </p>
+      </div>
+    </section>
+
+    <!-- ============ SLIDE 6 — DIAGNOSTICS ============ -->
+    <section class="slide slide--diag" data-slide data-label="Diagnostics">
+      <div class="slide__inner diag">
+        <div class="diag__head">
+          <span class="kicker" data-an="up"><i></i>05 — Diagnostics</span>
+          <h2 class="h2" data-an="up">What’s missing under the hood.</h2>
+        </div>
+
+        <div class="cluster" data-cluster>
+          <div class="cluster__bar">
+            <span class="mono">Systems Diagnostic</span>
+            <span class="cluster__status mono">
+              <span class="cluster__warn" aria-hidden="true"></span>
+              <span data-count="4" data-dur="1.2">0</span>&nbsp;Faults Detected
+            </span>
+          </div>
+
+          <ul class="cluster__list">
+            <li class="telltale" data-tt>
+              <span class="telltale__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="22" height="22"><path d="M12 3 22 20H2L12 3z" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/><path d="M12 10v5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><circle cx="12" cy="17.4" r="0.5" fill="currentColor" stroke="currentColor" stroke-width="0.9"/></svg>
+              </span>
+              <span class="telltale__body">
+                <span class="telltale__name">Customer Reactivation</span>
+                <span class="telltale__desc">No structured system to win back lapsed customers</span>
+              </span>
+              <span class="telltale__meta">
+                <span class="telltale__code mono">REACT · 00</span>
+                <span class="telltale__tag mono">Not Installed</span>
+              </span>
+            </li>
+
+            <li class="telltale" data-tt>
+              <span class="telltale__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="22" height="22"><path d="M12 3 22 20H2L12 3z" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/><path d="M12 10v5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><circle cx="12" cy="17.4" r="0.5" fill="currentColor" stroke="currentColor" stroke-width="0.9"/></svg>
+              </span>
+              <span class="telltale__body">
+                <span class="telltale__name">Service Reminders</span>
+                <span class="telltale__desc">No automated reminders bringing customers back on schedule</span>
+              </span>
+              <span class="telltale__meta">
+                <span class="telltale__code mono">REMND · 00</span>
+                <span class="telltale__tag mono">Not Installed</span>
+              </span>
+            </li>
+
+            <li class="telltale" data-tt>
+              <span class="telltale__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="22" height="22"><path d="M12 3 22 20H2L12 3z" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/><path d="M12 10v5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><circle cx="12" cy="17.4" r="0.5" fill="currentColor" stroke="currentColor" stroke-width="0.9"/></svg>
+              </span>
+              <span class="telltale__body">
+                <span class="telltale__name">Review Generation</span>
+                <span class="telltale__desc">No automated system building public proof &amp; reputation</span>
+              </span>
+              <span class="telltale__meta">
+                <span class="telltale__code mono">REVUE · 00</span>
+                <span class="telltale__tag mono">Not Installed</span>
+              </span>
+            </li>
+
+            <li class="telltale telltale--warn" data-tt>
+              <span class="telltale__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="22" height="22"><path d="M12 3 22 20H2L12 3z" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/><path d="M12 10v5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><circle cx="12" cy="17.4" r="0.5" fill="currentColor" stroke="currentColor" stroke-width="0.9"/></svg>
+              </span>
+              <span class="telltale__body">
+                <span class="telltale__name">Website Performance &amp; Visibility</span>
+                <span class="telltale__desc">Significant headroom in speed, search presence &amp; conversion</span>
+              </span>
+              <span class="telltale__meta">
+                <span class="telltale__code mono">WEB · LOW</span>
+                <span class="telltale__tag mono">Below Spec</span>
+              </span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SLIDE 7 — THE ASSET ============ -->
+    <section class="slide slide--asset" data-slide data-label="The Asset">
+      <div class="slide__inner asset">
+        <div class="asset__content">
+          <span class="kicker" data-an="up"><i></i>06 — The Asset</span>
+          <h2 class="h2" data-an="up">Your <span class="accent">9,000 customers</span><br />are an asset — not a list.</h2>
+          <p class="asset__lede" data-an="up">You are not short on customers. You already own relationships with roughly nine thousand people who have trusted you before — dormant, not lost.</p>
+
+          <div class="asset__stat">
+            <span class="asset__num" data-count="9000" data-dur="2.4">0</span>
+            <span class="asset__num-label mono" data-an="up">Existing Relationships</span>
+          </div>
+
+          <span class="asset__legend mono" data-an="up">
+            <span class="asset__legend-dot"></span>1 node ≈ 50 previous customers
+          </span>
+        </div>
+
+        <div class="asset__viz">
+          <div class="asset__grid" id="assetGrid" aria-hidden="true"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SLIDE 8 — TRUE VALUE (ASSEMBLY) ============ -->
+    <section class="slide slide--worth" data-slide data-label="True Value">
+      <div class="slide__inner worth">
+        <div class="worth__head">
+          <span class="kicker" data-an="up"><i></i>07 — True Value</span>
+          <h2 class="h2" data-an="up">What is one returning customer<br />actually worth?</h2>
+          <span class="tag-illus mono" data-an="up"><span class="tag-illus__dot"></span>Enter your own figures — illustrative example only</span>
+        </div>
+
+        <div class="assembly" data-assembly>
+          <div class="assembly__stack">
+            <div class="layer" data-layer>
+              <span class="layer__bolt layer__bolt--l"></span><span class="layer__bolt layer__bolt--r"></span>
+              <span class="layer__name">Average Invoice Value</span>
+              <span class="layer__val finput"><span class="finput__pre">R</span><input id="inInvoice" class="finput__in mono" type="text" inputmode="decimal" value="3500" aria-label="Average invoice value" /></span>
+              <span class="layer__note mono">per visit</span>
+            </div>
+            <div class="layer layer--op" data-layer>
+              <span class="layer__bolt layer__bolt--l"></span><span class="layer__bolt layer__bolt--r"></span>
+              <span class="layer__name">Average Visits Per Year</span>
+              <span class="layer__val finput finput--x"><span class="finput__pre">×</span><input id="inVisits" class="finput__in mono" type="text" inputmode="decimal" value="1.5" aria-label="Average visits per year" /></span>
+              <span class="layer__note mono">visits / year</span>
+            </div>
+            <div class="layer layer--total" data-layer>
+              <span class="layer__name">Annual Revenue Per Customer</span>
+              <span class="layer__val mono accent" id="worthTotal">R5,250</span>
+              <span class="layer__note mono">per customer / year</span>
+            </div>
+          </div>
+          <div class="assembly__formula mono" data-an="up">Average invoice value × Average visits per year = Annual revenue per customer</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SLIDE 9 — RECOVERABLE OPPORTUNITY ============ -->
+    <section class="slide slide--opp" data-slide data-label="Recoverable Opportunity">
+      <div class="slide__inner opp">
+        <div class="opp__head">
+          <span class="kicker" data-an="up"><i></i>08 — The Recoverable Opportunity</span>
+          <h2 class="h2" data-an="up">The recoverable opportunity.</h2>
+          <p class="opp__source mono" data-an="up"><span class="opp__source-dot"></span>Calculated live from your inputs on Slide 8 and the database assumptions below.</p>
+        </div>
+
+        <div class="opp__body">
+          <!-- Telemetry funnel (live outputs) -->
+          <div class="opp__funnel">
+            <div class="fstep" data-fstep>
+              <span class="fstep__top"><span class="fstep__label mono">Database Size</span><span class="fstep__val" id="oppDb">0</span></span>
+              <span class="fstep__bar"><i id="oppDbBar" style="width:100%"></i></span>
+            </div>
+            <div class="fstep" data-fstep>
+              <span class="fstep__top"><span class="fstep__label mono">Reachable Customers <em id="oppReachPct">· 70%</em></span><span class="fstep__val" id="oppReach">0</span></span>
+              <span class="fstep__bar"><i id="oppReachBar" style="width:70%"></i></span>
+            </div>
+            <div class="fstep" data-fstep>
+              <span class="fstep__top"><span class="fstep__label mono">Reactivated Customers <em id="oppRetPct">· 15%</em></span><span class="fstep__val" id="oppReact">0</span></span>
+              <span class="fstep__bar"><i id="oppReactBar" style="width:10%"></i></span>
+            </div>
+            <div class="fstep fstep--out" data-fstep>
+              <span class="fstep__top"><span class="fstep__label mono accent">Annual Reactivation Revenue</span><span class="fstep__val accent" id="oppRev">R0</span></span>
+              <span class="fstep__bar"><i id="oppRevBar" class="fstep__bar--red" style="width:50%"></i></span>
+            </div>
+          </div>
+
+          <!-- Instrument gauge -->
+          <div class="opp__gauge">
+            <svg class="gauge" viewBox="0 0 300 248" aria-hidden="true">
+              <path class="gauge__track" id="gaugeTrack" />
+              <path class="gauge__redline" id="gaugeRedline" />
+              <path class="gauge__fill" id="gaugeFill" />
+              <g class="gauge__ticks" id="gaugeTicks"></g>
+              <line class="gauge__needle" id="gaugeNeedle" x1="150" y1="150" x2="150" y2="46" />
+              <circle class="gauge__hub" cx="150" cy="150" r="9" />
+            </svg>
+            <div class="gauge__readout">
+              <span class="gauge__val" id="gaugeVal">R0.00M</span>
+              <span class="gauge__cap mono">Annual Reactivation</span>
+            </div>
+            <span class="opp__using mono"><span class="opp__using-dot"></span>Using your numbers</span>
+          </div>
+        </div>
+
+        <div class="opp__adjust" data-an="up">
+          <span class="opp__adjust-label mono">Adjust these figures live during the meeting</span>
+          <svg class="opp__adjust-arrow" viewBox="0 0 40 24" aria-hidden="true"><path d="M4 4 L4 14 L34 14 M28 8 L34 14 L28 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <div class="opp__controls">
+          <div class="ctrl ctrl--num">
+            <span class="ctrl__l mono">Database size</span>
+            <span class="ninput"><input id="inDb" class="ninput__in mono" type="text" inputmode="numeric" value="9000" aria-label="Database size" /></span>
+          </div>
+          <div class="ctrl">
+            <span class="ctrl__l mono">Reachable / contactable <b id="inReachOut">70%</b></span>
+            <input id="inReach" class="slider" type="range" min="0" max="100" value="70" aria-label="Reachable percentage" />
+          </div>
+          <div class="ctrl">
+            <span class="ctrl__l mono">Customer return rate <b id="inReturnOut">15%</b></span>
+            <input id="inReturn" class="slider" type="range" min="0" max="50" value="15" aria-label="Customer return percentage" />
+          </div>
+          <div class="ctrl ctrl--cv">
+            <span class="ctrl__l mono">Annual rev / customer</span>
+            <span class="ctrl__cv mono" id="oppCV">R5,250</span>
+          </div>
+        </div>
+        <span class="opp__disc tag-illus mono"><span class="tag-illus__dot"></span>Illustrative model — not a guaranteed outcome</span>
+      </div>
+    </section>
+
+    <!-- ============ SLIDE 10 — STRATEGIC SEQUENCE ============ -->
+    <section class="slide slide--path" data-slide data-label="Strategic Sequence">
+      <div class="slide__inner pathway">
+        <div class="pathway__head">
+          <span class="kicker" data-an="up"><i></i>09 — Strategic Sequence</span>
+          <h2 class="h2" data-an="up">Reclaim. Retain. Acquire.</h2>
+        </div>
+
+        <div class="pathway__track" id="pathTrack">
+          <svg class="racing" viewBox="0 0 1200 380" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
+            <path class="racing__ghost" d="M40 320 C 240 320, 300 250, 470 230 S 760 210, 860 140 S 1090 70, 1160 56" />
+            <path class="racing__line" id="racingLine" d="M40 320 C 240 320, 300 250, 470 230 S 760 210, 860 140 S 1090 70, 1160 56" />
+            <g id="racingApex">
+              <circle class="apex" data-apex cx="240" cy="300" r="7" />
+              <circle class="apex" data-apex cx="640" cy="207" r="7" />
+              <circle class="apex" data-apex cx="1040" cy="92" r="7" />
+            </g>
+            <circle class="racing__car" id="racingCar" r="6" cx="40" cy="320" />
+          </svg>
+
+          <div class="phase phase--1" data-phase>
+            <span class="phase__sector mono">Sector 01</span>
+            <span class="phase__name">Reclaim</span>
+            <span class="phase__desc">Recover lost value.</span>
+          </div>
+          <div class="phase phase--2" data-phase>
+            <span class="phase__sector mono">Sector 02</span>
+            <span class="phase__name">Retain</span>
+            <span class="phase__desc">Create recurring value.</span>
+          </div>
+          <div class="phase phase--3" data-phase>
+            <span class="phase__sector mono">Sector 03</span>
+            <span class="phase__name">Acquire</span>
+            <span class="phase__desc">Generate new value.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SLIDE 11 — RECLAIM: WAKE THE 9,000 ============ -->
+    <section class="slide slide--reclaim" data-slide data-label="Reclaim">
+      <div class="slide__inner reclaim">
+        <div class="reclaim__head">
+          <span class="kicker" data-an="up"><i></i>10 — Reclaim</span>
+          <h2 class="h2" data-an="up">Wake the 9,000.</h2>
+          <p class="reclaim__sub" data-an="up">Everything needed to start is already in the building. We simply bring it online.</p>
+          <span class="tag-illus mono" data-an="up"><span class="tag-illus__dot"></span>Illustrative example — segment figures for demonstration only</span>
+        </div>
+
+        <div class="reclaim__body">
+          <div class="console" data-console>
+            <div class="console__bar"><span class="mono">System Initialisation</span><span class="mono dim">SAC&nbsp;·&nbsp;OS</span></div>
+            <ul class="console__list">
+              <li class="boot" data-boot><span class="boot__label mono">Import customer database</span><span class="boot__val mono">9,000</span><span class="boot__status mono">OK</span></li>
+              <li class="boot" data-boot><span class="boot__label mono">Deduplicate &amp; clean records</span><span class="boot__val mono">−2,700</span><span class="boot__status mono">OK</span></li>
+              <li class="boot" data-boot><span class="boot__label mono">Validate contact details</span><span class="boot__val mono">6,300</span><span class="boot__status mono">OK</span></li>
+              <li class="boot" data-boot><span class="boot__label mono">Segment by service history</span><span class="boot__val mono">4 groups</span><span class="boot__status mono">OK</span></li>
+              <li class="boot" data-boot><span class="boot__label mono">Reactivation queue</span><span class="boot__val mono">armed</span><span class="boot__status boot__status--ready mono">READY</span></li>
+            </ul>
+          </div>
+
+          <div class="segments" data-segments>
+            <span class="segments__title mono" data-an="up">Reachable Segments</span>
+            <div class="seg" data-seg style="--w:100%"><span class="seg__name">Overdue service · 3–9 mo</span><span class="seg__bar"><i></i></span><span class="seg__n mono" data-count="2480">0</span></div>
+            <div class="seg" data-seg style="--w:79%"><span class="seg__name">Lapsed · 9–18 mo</span><span class="seg__bar"><i></i></span><span class="seg__n mono" data-count="1950">0</span></div>
+            <div class="seg" data-seg style="--w:45%"><span class="seg__name">Long lapsed · 18 mo+</span><span class="seg__bar"><i></i></span><span class="seg__n mono" data-count="1120">0</span></div>
+            <div class="seg" data-seg style="--w:30%"><span class="seg__name">High-value &amp; fleet</span><span class="seg__bar"><i></i></span><span class="seg__n mono" data-count="750">0</span></div>
+            <div class="segments__foot"><span class="mono dim">Total reachable</span><span class="mono accent" data-count="6300">0</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SLIDE 12 — REACTIVATION IN ACTION ============ -->
+    <section class="slide slide--react" data-slide data-label="Reactivation">
+      <div class="slide__inner react">
+        <div class="react__head">
+          <span class="kicker" data-an="up"><i></i>11 — Reactivation In Action</span>
+          <h2 class="h2" data-an="up">One message. One reply. One car back.</h2>
+        </div>
+
+        <div class="react__cards">
+          <article class="msg msg--sms" data-msgcard>
+            <div class="msg__head"><span class="msg__ch"><span class="msg__dot"></span>SMS</span><span class="msg__meta mono">Today · 09:12</span></div>
+            <div class="msg__body">
+              <div class="bubble bubble--in" data-bubble>Hi James, it’s SAC Kyalami. Your BMW 320i is due for a service. Reply YES to book this week.</div>
+              <div class="bubble bubble--out" data-bubble>YES</div>
+            </div>
+          </article>
+
+          <article class="msg msg--wa" data-msgcard>
+            <div class="msg__head"><span class="msg__ch"><span class="msg__dot"></span>WhatsApp</span><span class="msg__meta mono">Online</span></div>
+            <div class="msg__body">
+              <div class="bubble bubble--in" data-bubble>Hi James 👋 It’s been 11 months since your last service. Want us to hold a slot Thursday?</div>
+              <div class="bubble bubble--out" data-bubble>Yes please, morning if possible 👍</div>
+              <div class="bubble bubble--in" data-bubble>Booked ✅ Thursday 08:30. See you then.</div>
+            </div>
+          </article>
+
+          <article class="msg msg--email" data-msgcard>
+            <div class="msg__head"><span class="msg__ch"><span class="msg__dot"></span>Email</span><span class="msg__meta mono">Inbox</span></div>
+            <div class="msg__body msg__body--email">
+              <span class="email__subj">Your BMW is due for a service</span>
+              <span class="email__line">Hi James, our records show your 320i is due. Pick a time that suits you — we’ll handle the rest.</span>
+              <span class="email__btn">Book my service</span>
+            </div>
+          </article>
+        </div>
+
+        <div class="flowstrip" data-flow>
+          <div class="fnode" data-fnode><span class="fnode__i mono">01</span>Message delivered</div>
+          <span class="flowstrip__arr" data-arr></span>
+          <div class="fnode" data-fnode><span class="fnode__i mono">02</span>Customer responds</div>
+          <span class="flowstrip__arr" data-arr></span>
+          <div class="fnode" data-fnode><span class="fnode__i mono">03</span>Booking created</div>
+          <span class="flowstrip__arr" data-arr></span>
+          <div class="fnode fnode--end" data-fnode><span class="fnode__i mono">04</span>Vehicle returns</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SLIDE 13 — RETAIN: STOP THE LEAK ============ -->
+    <section class="slide slide--retain" data-slide data-label="Retain">
+      <div class="slide__inner retain">
+        <div class="retain__head">
+          <span class="kicker" data-an="up"><i></i>12 — Retain</span>
+          <h2 class="h2" data-an="up">Stop the leak.</h2>
+        </div>
+
+        <div class="retain__cols">
+          <div class="state state--now" data-state>
+            <span class="state__tag mono">Current State — Open Circuit</span>
+            <ul class="leak">
+              <li class="leaknode" data-leaknode><span class="leak__dot"></span>Service completed</li>
+              <li class="leaknode" data-leaknode><span class="leak__dot"></span>Customer leaves</li>
+              <li class="leaknode leaknode--lost" data-leaknode><span class="leak__dot"></span>Relationship ends</li>
+            </ul>
+            <span class="leak__drip" data-drip>↓ value leaks out</span>
+          </div>
+
+          <div class="state state--future" data-state>
+            <span class="state__tag mono accent">Future State — Closed Loop</span>
+            <div class="loopwrap">
+              <div class="loop">
+                <svg class="loop__svg" viewBox="0 0 300 300" aria-hidden="true">
+                  <circle class="loop__ring" id="loopRing" cx="150" cy="150" r="116" />
+                  <g class="loop__pts">
+                    <g class="lpt"><circle cx="150"   cy="34"  r="13" /><text x="150"   y="39">1</text></g>
+                    <g class="lpt"><circle cx="260.3" cy="114.2" r="13" /><text x="260.3" y="119">2</text></g>
+                    <g class="lpt"><circle cx="218.2" cy="243.8" r="13" /><text x="218.2" y="248">3</text></g>
+                    <g class="lpt"><circle cx="81.8"  cy="243.8" r="13" /><text x="81.8"  y="248">4</text></g>
+                    <g class="lpt"><circle cx="39.7"  cy="114.2" r="13" /><text x="39.7"  y="119">5</text></g>
+                  </g>
+                  <circle class="loop__car" id="loopCar" r="6" cx="150" cy="34" />
+                </svg>
+                <span class="loop__center mono">Closed<br />loop</span>
+              </div>
+              <ol class="looplegend">
+                <li class="lleg" data-lleg><span class="mono">1</span>Service</li>
+                <li class="lleg" data-lleg><span class="mono">2</span>Review request</li>
+                <li class="lleg" data-lleg><span class="mono">3</span>Service reminder</li>
+                <li class="lleg" data-lleg><span class="mono">4</span>Follow-up</li>
+                <li class="lleg lleg--end" data-lleg><span class="mono">5</span>Returns again</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SLIDE 14 — SERVICE REMINDERS IN ACTION ============ -->
+    <section class="slide slide--remind" data-slide data-label="Service Reminders">
+      <div class="slide__inner remind">
+        <div class="remind__head">
+          <span class="kicker" data-an="up"><i></i>13 — Service Reminders In Action</span>
+          <h2 class="h2" data-an="up">Precision scheduling, on autopilot.</h2>
+          <span class="tag-illus mono" data-an="up"><span class="tag-illus__dot"></span>Illustrative example — sample vehicle &amp; intervals</span>
+        </div>
+
+        <div class="pipeline" data-pipeline>
+          <div class="pstage" data-pstage>
+            <span class="pstage__i mono">01</span>
+            <span class="pstage__t">Vehicle record</span>
+            <span class="pstage__d mono">CA 184-period<br />BMW 320i · last 12 Aug</span>
+          </div>
+          <span class="pwire" data-pwire></span>
+          <div class="pstage" data-pstage>
+            <span class="pstage__i mono">02</span>
+            <span class="pstage__t">Interval reached</span>
+            <span class="pmeter"><i></i></span>
+            <span class="pstage__d mono">15,000 km / 12 mo</span>
+          </div>
+          <span class="pwire" data-pwire></span>
+          <div class="pstage" data-pstage>
+            <span class="pstage__i mono">03</span>
+            <span class="pstage__t">Reminder sent</span>
+            <span class="pstage__d mono">Auto · SMS + Email</span>
+          </div>
+          <span class="pwire" data-pwire></span>
+          <div class="pstage" data-pstage>
+            <span class="pstage__i mono">04</span>
+            <span class="pstage__t">Booking confirmed</span>
+            <span class="pstage__d mono">Thu · 08:30</span>
+          </div>
+          <span class="pwire" data-pwire></span>
+          <div class="pstage pstage--end" data-pstage>
+            <span class="pstage__i mono">05</span>
+            <span class="pstage__t">Calendar updated</span>
+            <span class="cal" id="remCal"></span>
+          </div>
+        </div>
+
+        <p class="remind__note"><span class="accent">Zero manual follow-up.</span> The workshop calendar fills itself.</p>
+      </div>
+    </section>
+
+    <!-- ============ SLIDE 15 — REVIEWS IN ACTION ============ -->
+    <section class="slide slide--reviews" data-slide data-label="Reviews">
+      <div class="slide__inner reviews">
+        <div class="reviews__head">
+          <span class="kicker" data-an="up"><i></i>14 — Reviews In Action</span>
+          <h2 class="h2" data-an="up">Reviews can compound into customers.</h2>
+          <span class="tag-illus mono" data-an="up"><span class="tag-illus__dot"></span>Illustrative example — sample review &amp; figures</span>
+        </div>
+
+        <div class="reviews__body">
+          <div class="reviews__left">
+            <article class="review" data-review>
+              <div class="review__top">
+                <span class="review__avatar">J</span>
+                <span class="review__who"><b>James M.</b><span class="review__stars" aria-hidden="true">★★★★★</span></span>
+                <span class="review__src mono">Google</span>
+              </div>
+              <p class="review__text">“Honest, fast and fairly priced. I’ve trusted SAC Kyalami with my cars for years — wouldn’t take them anywhere else.”</p>
+            </article>
+
+            <div class="reviews__chain" data-chain>
+              <span class="rchain" data-rchain>Completed job</span>
+              <span class="rchain" data-rchain>Review request</span>
+              <span class="rchain" data-rchain>5★ review</span>
+              <span class="rchain" data-rchain>Higher trust</span>
+              <span class="rchain rchain--end" data-rchain>More customers</span>
+            </div>
+          </div>
+
+          <div class="reviews__right">
+            <div class="rstats">
+              <div class="rstat" data-rstat><span class="rstat__v mono"><span data-count="4.8" data-dec="1">0</span>★</span><span class="rstat__l mono">Avg rating</span></div>
+              <div class="rstat" data-rstat><span class="rstat__v mono" data-count="214">0</span><span class="rstat__l mono">Reviews</span></div>
+              <div class="rstat" data-rstat><span class="rstat__v mono">+<span data-count="38" data-suffix="%">0</span></span><span class="rstat__l mono">Search visibility</span></div>
+            </div>
+            <div class="rgrowth">
+              <svg class="rgrowth__svg" viewBox="0 0 520 220" preserveAspectRatio="none" aria-hidden="true">
+                <path class="rgrowth__area" id="rgArea" />
+                <path class="rgrowth__line" id="rgLine" d="M0 206 C 120 202, 200 182, 300 124 S 470 30, 520 12" />
+              </svg>
+              <span class="rgrowth__cap mono">Reviews → ranking → customers → more reviews</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SLIDE 16 — ACQUIRE: WIN THE NEXT 9,000 ============ -->
+    <section class="slide slide--acquire" data-slide data-label="Acquire">
+      <div class="slide__inner acquire">
+        <div class="acquire__head">
+          <span class="kicker" data-an="up"><i></i>15 — Acquire</span>
+          <h2 class="h2" data-an="up">Win the next 9,000.</h2>
+          <p class="acquire__sub" data-an="up">With retention holding value in, acquisition has the potential to compound on a stable base.</p>
+        </div>
+
+        <ul class="levers">
+          <li class="lever" data-lever>
+            <span class="lever__i mono">01</span>
+            <span class="lever__body"><span class="lever__name">Website conversion</span><span class="lever__desc">Turn more of today’s visitors into booked jobs</span></span>
+            <span class="lever__trend" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+          </li>
+          <li class="lever" data-lever>
+            <span class="lever__i mono">02</span>
+            <span class="lever__body"><span class="lever__name">Search visibility</span><span class="lever__desc">Rank where customers are already searching</span></span>
+            <span class="lever__trend" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+          </li>
+          <li class="lever" data-lever>
+            <span class="lever__i mono">03</span>
+            <span class="lever__body"><span class="lever__name">AI visibility</span><span class="lever__desc">Be discoverable to AI assistants &amp; search</span></span>
+            <span class="lever__trend" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+          </li>
+          <li class="lever" data-lever>
+            <span class="lever__i mono">04</span>
+            <span class="lever__body"><span class="lever__name">Measurable paid search</span><span class="lever__desc">Spend linked to booking outcomes</span></span>
+            <span class="lever__trend" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+          </li>
+          <li class="lever lever--end" data-lever>
+            <span class="lever__i mono">05</span>
+            <span class="lever__body"><span class="lever__name">Fleet &amp; corporate</span><span class="lever__desc">Higher-value, recurring service contracts</span></span>
+            <span class="lever__trend" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ SLIDE 17 — WEBSITE PERFORMANCE ============ -->
+    <section class="slide slide--webperf" data-slide data-label="Website Performance">
+      <div class="slide__inner webperf">
+        <div class="webperf__head">
+          <span class="kicker" data-an="up"><i></i>16 — Website Diagnostic</span>
+          <h2 class="h2" data-an="up">Your website may be losing bookings.</h2>
+        </div>
+
+        <div class="webperf__body">
+          <div class="scores">
+            <div class="score score--red" data-score-ring style="--p:36">
+              <svg viewBox="0 0 120 120" aria-hidden="true"><circle class="score__track" cx="60" cy="60" r="52"/><circle class="score__bar" cx="60" cy="60" r="52"/></svg>
+              <div class="score__mid"><span class="score__num mono" data-count="36">0</span><span class="score__max mono">/100</span></div>
+              <span class="score__label mono">Mobile Performance</span>
+            </div>
+            <div class="score score--amber" data-score-ring style="--p:83">
+              <svg viewBox="0 0 120 120" aria-hidden="true"><circle class="score__track" cx="60" cy="60" r="52"/><circle class="score__bar" cx="60" cy="60" r="52"/></svg>
+              <div class="score__mid"><span class="score__num mono" data-count="83">0</span><span class="score__max mono">/100</span></div>
+              <span class="score__label mono">Accessibility</span>
+            </div>
+          </div>
+
+          <div class="webperf__aside">
+            <span class="webperf__kpi mono" data-an="up">Conversion opportunity</span>
+            <p class="webperf__lead" data-an="up">A slow mobile site can quietly turn enquiries away before a customer ever calls. <span class="accent">A faster site may convert more enquiries.</span></p>
+            <ul class="webperf__metrics">
+              <li data-wmetric><span class="wm__l">Mobile load time</span><span class="wm__v mono">6.4s <em>→ target &lt; 2.5s</em></span></li>
+              <li data-wmetric><span class="wm__l">Visitors lost to slow load</span><span class="wm__v mono">~1 in 2</span></li>
+              <li data-wmetric><span class="wm__l">Booking path</span><span class="wm__v mono">Unclear → guided</span></li>
+            </ul>
+            <span class="tag-illus mono" data-an="up"><span class="tag-illus__dot"></span>Indicative scores — full audit required to confirm</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SLIDE 18 — SEARCH & AI VISIBILITY ============ -->
+    <section class="slide slide--vis" data-slide data-label="Search & AI Visibility">
+      <div class="slide__inner vis">
+        <div class="vis__head">
+          <span class="kicker" data-an="up"><i></i>17 — Being Found</span>
+          <h2 class="h2" data-an="up">Search &amp; AI visibility.</h2>
+          <p class="vis__sub" data-an="up">When someone looks for a trusted workshop near Kyalami — in Google or an AI assistant — SAC has the opportunity to be the answer.</p>
+        </div>
+
+        <ul class="vislist">
+          <li class="visrow" data-visrow><span class="visrow__name">Website indexing</span><span class="visrow__desc">Every page found &amp; understood by search engines</span><span class="signal" data-cur="2" data-max="6"></span></li>
+          <li class="visrow" data-visrow><span class="visrow__name">AI search visibility</span><span class="visrow__desc">Cited by AI assistants answering local queries</span><span class="signal" data-cur="1" data-max="6"></span></li>
+          <li class="visrow" data-visrow><span class="visrow__name">Authority signals</span><span class="visrow__desc">Reviews, mentions &amp; trust the algorithms reward</span><span class="signal" data-cur="2" data-max="6"></span></li>
+          <li class="visrow" data-visrow><span class="visrow__name">Structured content</span><span class="visrow__desc">Services &amp; vehicles described in machine-readable form</span><span class="signal" data-cur="2" data-max="6"></span></li>
+          <li class="visrow" data-visrow><span class="visrow__name">Local SEO</span><span class="visrow__desc">Owning the “near me” searches around Kyalami</span><span class="signal" data-cur="3" data-max="6"></span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ SLIDE 19 — REPORTING DASHBOARD ============ -->
+    <section class="slide slide--dash" data-slide data-label="Reporting">
+      <div class="slide__inner dashboard">
+        <div class="dashboard__head">
+          <span class="kicker" data-an="up"><i></i>18 — Reporting</span>
+          <h2 class="h2" data-an="up">You’ll see everything.</h2>
+          <span class="tag-illus mono" data-an="up"><span class="tag-illus__dot"></span>Illustrative dashboard — sample figures for demonstration only</span>
+        </div>
+
+        <div class="dashboard__body">
+          <div class="dash" data-dash>
+            <div class="dash__bar"><span class="mono">Monthly Report · March</span><span class="mono dim">SAC Kyalami</span></div>
+            <div class="dash__grid">
+              <div class="tile" data-tile><span class="tile__v mono" data-count="312">0</span><span class="tile__l mono">Customers reactivated</span><svg class="spark" viewBox="0 0 100 28" preserveAspectRatio="none"><path d="M0 24 L20 21 L40 16 L60 14 L80 7 L100 3"/></svg></div>
+              <div class="tile" data-tile><span class="tile__v mono" data-count="148">0</span><span class="tile__l mono">Bookings generated</span><svg class="spark" viewBox="0 0 100 28" preserveAspectRatio="none"><path d="M0 22 L20 20 L40 18 L60 12 L80 9 L100 4"/></svg></div>
+              <div class="tile" data-tile><span class="tile__v mono" data-count="540">0</span><span class="tile__l mono">Review requests sent</span><svg class="spark" viewBox="0 0 100 28" preserveAspectRatio="none"><path d="M0 25 L20 22 L40 19 L60 13 L80 8 L100 5"/></svg></div>
+              <div class="tile" data-tile><span class="tile__v mono" data-count="63">0</span><span class="tile__l mono">New reviews</span><svg class="spark" viewBox="0 0 100 28" preserveAspectRatio="none"><path d="M0 26 L20 23 L40 17 L60 12 L80 6 L100 2"/></svg></div>
+              <div class="tile" data-tile><span class="tile__v mono" data-count="96">0</span><span class="tile__l mono">Website leads</span><svg class="spark" viewBox="0 0 100 28" preserveAspectRatio="none"><path d="M0 23 L20 21 L40 17 L60 15 L80 10 L100 6"/></svg></div>
+              <div class="tile" data-tile><span class="tile__v mono" data-count="74">0</span><span class="tile__l mono">Calls generated</span><svg class="spark" viewBox="0 0 100 28" preserveAspectRatio="none"><path d="M0 24 L20 22 L40 20 L60 14 L80 11 L100 7"/></svg></div>
+              <div class="tile tile--wide" data-tile>
+                <span class="tile__l mono">Marketing performance</span>
+                <div class="tile__bars"><i style="--h:40%"></i><i style="--h:55%"></i><i style="--h:48%"></i><i style="--h:70%"></i><i style="--h:82%"></i><i style="--h:95%"></i></div>
+                <span class="tile__roi mono">Return on spend <span class="accent">4.6×</span></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="dashboard__photo">
+            <div class="dpanel">
+              <div class="dpanel__bar"><span class="mono">Performance · live</span><span class="mono dim">YTD</span></div>
+              <div class="dpanel__chart">
+                <svg viewBox="0 0 300 200" preserveAspectRatio="none" aria-hidden="true">
+                  <path class="dpanel__area" d="M0 184 C 80 178, 130 156, 190 104 S 268 32, 300 16 L 300 200 L 0 200 Z" />
+                  <path class="dpanel__line" d="M0 184 C 80 178, 130 156, 190 104 S 268 32, 300 16" />
+                </svg>
+              </div>
+              <div class="dpanel__stat">
+                <span class="dpanel__v mono">4.6×</span>
+                <span class="dpanel__l mono">Return on spend</span>
+              </div>
+              <span class="dpanel__foot mono">Every rand tracked, end to end</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SLIDE 20 — 12-MONTH REVENUE MODEL ============ -->
+    <section class="slide slide--model" data-slide data-label="12-Month Picture">
+      <div class="slide__inner model">
+        <div class="model__head">
+          <span class="kicker" data-an="up"><i></i>19 — The Full Picture</span>
+          <h2 class="h2" data-an="up">The full 12-month picture.</h2>
+        </div>
+
+        <div class="model__body">
+          <div class="model__chart">
+            <div class="model__bars" id="modelBars" aria-hidden="true"></div>
+            <div class="model__axis mono"><span>Month 1</span><span>Month 12</span></div>
+          </div>
+          <div class="model__calc glass">
+            <div class="calc__head">
+              <span class="calc__title">Calculate your 12-month opportunity</span>
+              <span class="opp__using mono calc__using"><span class="opp__using-dot"></span>Using your numbers</span>
+            </div>
+            <div class="calc__linked mono">
+              Linked from your figures — <b id="lkDb">9,000</b> database · <b id="lkReach">70%</b> reachable · <b id="lkReturn">15%</b> return
+            </div>
+
+            <div class="calc__inputs">
+              <label class="cinput">
+                <span class="cinput__l mono">New customers / month</span>
+                <span class="cinput__f"><input id="inNew" class="cinput__in mono" type="text" inputmode="numeric" value="20" /></span>
+              </label>
+              <label class="cinput">
+                <span class="cinput__l mono">Average invoice value</span>
+                <span class="cinput__f"><span class="cinput__pre">R</span><input id="inInvoiceM" class="cinput__in mono" type="text" inputmode="decimal" value="3500" /></span>
+              </label>
+              <label class="cinput">
+                <span class="cinput__l mono">Average visits / year</span>
+                <span class="cinput__f"><span class="cinput__pre">×</span><input id="inVisitsM" class="cinput__in mono" type="text" inputmode="decimal" value="1.5" /></span>
+              </label>
+              <label class="cinput">
+                <span class="cinput__l mono">Review growth</span>
+                <span class="cinput__f"><input id="inReview" class="cinput__in mono" type="text" inputmode="numeric" value="20" /><span class="cinput__suf">%</span></span>
+              </label>
+              <label class="cinput">
+                <span class="cinput__l mono">Conversion uplift</span>
+                <span class="cinput__f"><input id="inConv" class="cinput__in mono" type="text" inputmode="numeric" value="10" /><span class="cinput__suf">%</span></span>
+              </label>
+              <div class="cinput cinput--readout">
+                <span class="cinput__l mono">Annual rev / customer</span>
+                <span class="cinput__ro mono" id="mCalcCV">R5,250</span>
+              </div>
+            </div>
+
+            <div class="calc__outputs">
+              <div class="cout"><span class="cout__dot lgd--reclaim"></span><span class="cout__l">Reactivation</span><span class="cout__v mono" id="outReact">R0</span></div>
+              <div class="cout"><span class="cout__dot lgd--retain"></span><span class="cout__l">Retention</span><span class="cout__v mono" id="outRetain">R0</span></div>
+              <div class="cout"><span class="cout__dot lgd--acquire"></span><span class="cout__l">New acquisition</span><span class="cout__v mono" id="outAcq">R0</span></div>
+            </div>
+
+            <div class="calc__total">
+              <span class="calc__total-l mono">Combined 12-month opportunity</span>
+              <span class="calc__total-v mono" id="modelTotal">R0</span>
+            </div>
+            <span class="tag-illus mono"><span class="tag-illus__dot"></span>Illustrative model for discussion — not a guaranteed outcome</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SLIDE 21 — CURRENT SETUP VS GROWTH SYSTEM ============ -->
+    <section class="slide slide--compare" data-slide data-label="Comparison">
+      <div class="slide__inner compare">
+        <div class="compare__head">
+          <span class="kicker" data-an="up"><i></i>20 — Current Setup vs Growth System</span>
+          <h2 class="h2" data-an="up">Current setup vs growth system.</h2>
+        </div>
+
+        <div class="compare__grid">
+          <article class="ccard ccard--current" data-ccard>
+            <span class="ccard__tag mono">Current Setup</span>
+            <ul class="ccard__list">
+              <li>Google Ads management</li>
+            </ul>
+            <div class="ccard__price">
+              <span class="ccard__price-l mono">Monthly Cost</span>
+              <span class="ccard__price-v mono">R9,500</span>
+              <span class="ccard__price-n mono">plus ad spend</span>
+            </div>
+          </article>
+
+          <article class="ccard ccard--bbettr" data-ccard>
+            <span class="ccard__tag mono accent">BBettr Growth System</span>
+            <ul class="ccard__list ccard__list--2col">
+              <li>Google Ads management</li>
+              <li>Website redesign</li>
+              <li>Customer retention system</li>
+              <li>Google review automation</li>
+              <li>Quarterly SEO improvements</li>
+              <li>Professional business photography</li>
+              <li>Monthly performance reporting</li>
+              <li>CRM access</li>
+              <li>BBettr client portal</li>
+              <li>Automation tracking</li>
+              <li>Lead visibility</li>
+              <li>Project visibility</li>
+            </ul>
+            <div class="ccard__price">
+              <span class="ccard__price-l mono">Monthly Investment</span>
+              <span class="ccard__price-v mono">R9,999.99</span>
+              <span class="ccard__price-n mono">plus ad spend</span>
+            </div>
+          </article>
+        </div>
+
+        <div class="compare__delta" data-an="up">
+          <span class="compare__delta-pre mono">For the complete growth system</span>
+          <span class="compare__delta-v">Only <span class="accent">R499.99</span> more <em>per month</em></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SLIDE 22 — WHAT HAPPENS AFTER YOU SAY YES ============ -->
+    <section class="slide slide--roadmap" data-slide data-label="After You Say Yes">
+      <div class="slide__inner roadmap">
+        <div class="roadmap__head">
+          <span class="kicker" data-an="up"><i></i>What Happens Next</span>
+          <h2 class="h2" data-an="up">What happens after you say yes?</h2>
+        </div>
+
+        <div class="roadmap__phases">
+          <article class="rphase" data-rphase>
+            <div class="rphase__top"><span class="rphase__n mono">01</span><span class="rphase__time mono">First 7 Days</span></div>
+            <span class="rphase__title">Foundation &amp; Launch</span>
+            <ul class="rphase__list">
+              <li>Website redesign &amp; launch</li>
+              <li>Google Ads setup &amp; activation</li>
+              <li>Tracking installation</li>
+              <li>Reporting dashboard setup</li>
+              <li>CRM access activated</li>
+              <li>BBettr portal access granted</li>
+            </ul>
+            <span class="rphase__out"><b class="mono">Outcome</b>The business immediately starts operating on the new growth system.</span>
+          </article>
+
+          <article class="rphase" data-rphase>
+            <div class="rphase__top"><span class="rphase__n mono">02</span><span class="rphase__time mono">Weeks 2–4</span></div>
+            <span class="rphase__title">Customer Reactivation</span>
+            <ul class="rphase__list">
+              <li>Database import</li>
+              <li>Database cleanup</li>
+              <li>Customer segmentation</li>
+              <li>SMS campaign setup</li>
+              <li>WhatsApp campaign setup</li>
+              <li>Email campaign setup</li>
+              <li>Booking capture workflows</li>
+            </ul>
+            <span class="rphase__out"><b class="mono">Outcome</b>Dormant customers begin returning.</span>
+          </article>
+
+          <article class="rphase" data-rphase>
+            <div class="rphase__top"><span class="rphase__n mono">03</span><span class="rphase__time mono">Month 2</span></div>
+            <span class="rphase__title">Retention Engine</span>
+            <ul class="rphase__list">
+              <li>Service reminder automation</li>
+              <li>Google review automation</li>
+              <li>Follow-up workflows</li>
+              <li>Customer retention system</li>
+            </ul>
+            <span class="rphase__out"><b class="mono">Outcome</b>Customers begin returning automatically.</span>
+          </article>
+
+          <article class="rphase rphase--ongoing" data-rphase>
+            <div class="rphase__top"><span class="rphase__n mono">04</span><span class="rphase__time mono">Ongoing</span></div>
+            <span class="rphase__title">Growth Optimisation</span>
+            <ul class="rphase__list">
+              <li>Google Ads optimisation</li>
+              <li>Quarterly SEO improvements</li>
+              <li>Website improvements</li>
+              <li>Monthly reporting</li>
+              <li>Growth recommendations</li>
+            </ul>
+            <span class="rphase__out"><b class="mono">Outcome</b>Predictable long-term customer growth.</span>
+          </article>
+        </div>
+
+        <div class="rmap" data-rmap>
+          <span class="rmap__track" data-rmap-track></span>
+          <div class="rms" data-rms><span class="rms__dot"></span><span class="rms__name">Website live</span><span class="rms__time mono">~7 days</span></div>
+          <div class="rms" data-rms><span class="rms__dot"></span><span class="rms__name">Google Ads active</span><span class="rms__time mono">~7 days</span></div>
+          <div class="rms" data-rms><span class="rms__dot"></span><span class="rms__name">Reactivation campaign</span><span class="rms__time mono">~30 days</span></div>
+          <div class="rms" data-rms><span class="rms__dot"></span><span class="rms__name">Retention system</span><span class="rms__time mono">~30–60 days</span></div>
+          <div class="rms rms--end" data-rms><span class="rms__dot"></span><span class="rms__name">Growth optimisation</span><span class="rms__time mono">Ongoing</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SLIDE 23 — FINAL CTA ============ -->
+    <section class="slide slide--cta" data-slide data-label="The Next Step">
+      <div class="slide__inner cta">
+        <div class="cta__grid" id="ctaGrid" aria-hidden="true"></div>
+        <div class="cta__content">
+          <span class="kicker center" data-an="up"><i></i>The Logical Next Step</span>
+          <h2 class="cta__title cta__title--q" data-an="mask">Ready to turn dormant customers<br />into booked vehicles?</h2>
+          <p class="cta__msg" data-an="up">The opportunity already exists. The customers are already in your database. The system is built and ready to switch on. <span class="accent">All that’s left is to begin.</span></p>
+          <span class="cta__btn" data-an="up">Start with Reclaim<span class="cta__btn-arr">→</span></span>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Bottom chrome -->
+  <footer class="botbar">
+    <span class="botbar__label mono" id="slideLabel">Cover</span>
+    <div class="botbar__nav">
+      <button class="navbtn" id="prevBtn" aria-label="Previous slide" disabled>
+        <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
+      </button>
+      <span class="counter mono"><span id="curNum">01</span><span class="counter__sep">/</span><span id="totNum">05</span></span>
+      <button class="navbtn" id="nextBtn" aria-label="Next slide">
+        <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
+      </button>
+    </div>
+  </footer>
+
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="js/app.js" defer></script>
+</body>
+</html>
