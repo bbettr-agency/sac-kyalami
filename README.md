@@ -32,8 +32,15 @@ mouse wheel, or horizontal swipe on touch devices.
 
 ## Deploy
 
-Zero-config static deploy (e.g. Vercel): framework preset **Other**, no build command,
-output directory **`/`** (repo root). `index.html` is served as the entry point.
+Static deploy, no build step. `vercel.json` pins this explicitly:
+framework `null`, no build/install command, output directory `.` (repo root).
+`index.html` is the entry point; `css/` and `js/` are served as-is.
+
+> **Important — public access:** if the deployment shows the page but with no styling
+> (raw HTML / serif font / 401 on `css/style.css`), **Vercel Deployment Protection** is enabled.
+> In the Vercel project: **Settings → Deployment Protection → Vercel Authentication → Disabled**
+> (and ensure Password Protection is off) so visitors without a Vercel account can load the deck
+> and all its assets. This is a project setting, not a code change.
 
 ## Notes
 

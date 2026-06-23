@@ -1,0 +1,5 @@
+# Local-only files — keep the static deployment minimal
+.claude
+server.js
+README.md
+.gitignore
